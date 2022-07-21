@@ -1,4 +1,4 @@
-# Tambak_Pinter
+# Tambak Pinter
 Tambak Pinter OR Akuarium Pinter
 
 === Download Libray ===
