@@ -28,35 +28,22 @@ Apabila ingin mengembangkan dengan memberikan pakan ikan tomatis bisa menambahka
       
       
       ///////////////////////////// Kode logika if
-      else if (msg.text.equalsIgnoreCase("Makan")) {  // if the received message is "LIGHT ON"...
-      
-      digitalWrite(led, LOW);                         // turn on the LED (inverted logic!)
-      
-      for (pos = 0; pos <= 180; pos += 1) {           // goes from 0 degrees to 180 degrees
-      
-        // in steps of 1 degree
-        
-        myservo.write(pos);  // tell servo to go to position in variable 'pos'
-        
-        delay(20);           // waits 15ms for the servo to reach the position
-        
+      else if (msg.text.equalsIgnoreCase("Makan")) {  // if the received message is "LIGHT ON"...      
+      digitalWrite(led, LOW);                         // turn on the LED (inverted logic!)      
+      for (pos = 0; pos <= 180; pos += 1) {           // goes from 0 degrees to 180 degrees      
+        // in steps of 1 degree        
+        myservo.write(pos);  // tell servo to go to position in variable 'pos'        
+        delay(20);           // waits 15ms for the servo to reach the position        
       }
-      for (pos = 180; pos >= 0; pos -= 1) {  // goes from 180 degrees to 0 degrees
-      
-        myservo.write(pos);                  // tell servo to go to position in variable 'pos'
-        
-        delay(20);                           // waits 15ms for the servo to reach the position
-        
+      for (pos = 180; pos >= 0; pos -= 1) {  // goes from 180 degrees to 0 degrees      
+        myservo.write(pos);                  // tell servo to go to position in variable 'pos'        
+        delay(20);                           // waits 15ms for the servo to reach the position        
       }
-      myBot.sendMessage(msg.sender.id, "Ikan Sudah Di Kasih Makan");  // notify the sender
-      
-      lcd.setCursor(0, 1);
-      
-      lcd.println("Sudah Makan");
-      
-      lcd.clear();
-      
-}
+      myBot.sendMessage(msg.sender.id, "Ikan Sudah Di Kasih Makan");  // notify the sender      
+      lcd.setCursor(0, 1);      
+      lcd.println("Sudah Makan");      
+      lcd.clear();      
+   }
 
 
 
