@@ -11,10 +11,10 @@ LiquidCrystal_I2C lcd(0x27, 16, 2); //alamat I2C
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
 CTBot myBot;
-String ssid = "Awan";    //nama ssid wifi kalian
-String pass = "12345678";  //password wifi kalian
-String token = "5551348830:AAFXsKxh51Wg1qVstf3MYMkTTx_34gUiKIs";    //token bot baru kalian
-const int id = 999141582;    //id telegram kalian
+String ssid = "xxxx";    //nama ssid wifi kalian
+String pass = "xxxxxx";  //password wifi kalian
+String token = "xxxxxx";    //token bot baru kalian
+const int id = xxxxxxx;    //id telegram kalian
 
 #define simizu D0
 void setup(void)
